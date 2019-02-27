@@ -1,0 +1,4 @@
+#!/bin/bash
+# First command (database backup) is optional
+/usr/local/bin/supercronic /opt/app-root/cron/crontab 1> /opt/app-root/cron/crontab.log &
+python /opt/app-root/odoo-bin --addons-path=/opt/app-root/addons -i base --database=odoo --db_host=postgres --db_user=odoo --db_password=myodoo --db-filter=odoo$ --log-level=debug --log-request --log-response --log-sql --load-language=es_ES

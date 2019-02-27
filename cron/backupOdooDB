@@ -1,0 +1,6 @@
+#!/bin/bash
+set -x
+rm -f /otp/app-root/cron/odoo*.sql
+odooBackupFile=/opt/app-root/cron/odoo-$(date '+%Y%m%d-%H%M%S').sql
+pg_dump -v -h postgres -U odoo odoo > $odooBackupFile
+#sshpass -p $SFTPASS sftp -v sftpuser@$SFTPHOST:uploads <<< $'put /tmp/odoo.sql'

@@ -1,0 +1,1 @@
+@daily bash /opt/app-root/cron/backupOdooDB

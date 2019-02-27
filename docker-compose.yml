@@ -1,0 +1,26 @@
+version: '2'
+services:
+  web:
+    image: "neonigma/odoo_openshift"
+    build: .
+    labels:
+      kompose.volume.size: 1Gi
+    ports:
+      - 32785:8069
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: odoo
+      POSTGRES_PASSWORD: myodoo
+      POSTGRES_USER: odoo
+      PGDATA: /var/lib/postgresql/data/db-files/
+    volumes:
+      ## this is for OpenShift volumes
+      - odoo-postgres-os:/var/lib/postgresql/data/
+
+      ## this is for docker-compose strategy
+      #- ./odoo-postgres-os:/var/lib/postgresql/data/
+    labels:
+      kompose.volume.size: 1Gi
+    ports:
+      - 5432
