@@ -13,7 +13,7 @@ If you aren't working with OpenShift and you just want to deploy Odoo in Docker 
 ## Prerequisites
 You need to install kompose in order to convert docker-compose and Dockerfile into yaml templates for using with OpenShift. You many need kubectl program if you want to apply the generated templates instead running directly into your OpenShift instance with kompose.
 
-You can download kompose [here](https://github.com/kubernetes/kompose/blob/master/docs/installation.md)
+You can download kompose [here](https://github.com/kubernetes/kompose/blob/master/docs/installation.md).
 
 ## Deploy Odoo in OpenShift
 You can do in two different ways:
