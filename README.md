@@ -1,4 +1,4 @@
-# OpenShift Template for Odoo
+# Running Odoo in Openshift
 
 ## Description
 This is a project to build templates for running Odoo app inside OpenShift pods using Kompose.
