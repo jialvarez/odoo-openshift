@@ -16,7 +16,9 @@ You need to install kompose in order to convert docker-compose and Dockerfile in
 You can download kompose [here](https://github.com/kubernetes/kompose/blob/master/docs/installation.md).
 
 ## Deploy Odoo in OpenShift
-You can do in two different ways:
+First of all, you need to download this project and the submodule inside pointing the official odoo repository.<br/>
+
+Then, you can deploy it in two different ways:
 
 ### Deploying directly into OpenShift project
 1. Just login into your cluster:<br/>
