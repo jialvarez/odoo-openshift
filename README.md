@@ -17,6 +17,8 @@ You can download kompose [here](https://github.com/kubernetes/kompose/blob/maste
 
 ## Deploy Odoo in OpenShift
 First of all, you need to download this project and the submodule inside pointing the official odoo repository.<br/>
+```git clone https://github.com/jialvarez/odoo_openshift.git && cd odoo_openshift```
+```git submodule update --init --remote```
 
 Then, you can deploy it in two different ways:
 
