@@ -47,8 +47,8 @@ If you want to remove pods, deployments, and volumes generated, you should type:
 ```kubectl apply -f templates/```
 
 ## Deploy Odoo in Docker containers
-You should use the [official Odoo template](https://hub.docker.com/_/odoo/) for this, but anyway you can use this image both to deploy in cloud or in OpenShift. I use the same image to deploy to Google Cloud and to OpenShift.
-You need to [uncomment line defining the volume for Docker container](https://github.com/jialvarez/odoo_openshift/blob/master/docker-compose.yml#L22) and [comment the OpenShift one](https://github.com/jialvarez/odoo_openshift/blob/master/docker-compose.yml#L19).
+You should use the [official Odoo template](https://hub.docker.com/_/odoo/) for this, but anyway you can use this image both to deploy in cloud or in OpenShift. I use the same image to deploy to Google Cloud and to OpenShift.<br/><br/>
+You need to [uncomment line defining the volume for Docker container](https://github.com/jialvarez/odoo_openshift/blob/master/docker-compose.yml#L22) and [comment the OpenShift one](https://github.com/jialvarez/odoo_openshift/blob/master/docker-compose.yml#L19).<br/><br/>
 And then just type:<br/>
 ```docker-compose up -d```
 
