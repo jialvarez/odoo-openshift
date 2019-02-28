@@ -26,8 +26,7 @@ You can do in two different ways:
 ```oc project <project_name>```
 
 3. Start the conversion and deployment proccess <br/>
-```kompose --file docker-compose.yml --provider openshift --verbose up```
-
+```kompose --file docker-compose.yml --provider openshift --verbose up```<br/><br/>
 Image generation can take a big time, so please be patient.
 <br/><br/>
 If you want to remove pods, deployments, and volumes generated, you should type:<br/>
