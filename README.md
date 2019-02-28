@@ -29,8 +29,8 @@ You can do in two different ways:
 ```kompose --file docker-compose.yml --provider openshift --verbose up```
 
 Image generation can take a big time, so please be patient.
-<br/>
-If you want to remove pods, deployments, and volumes generated, you should type:<br/><br/>
+<br/><br/>
+If you want to remove pods, deployments, and volumes generated, you should type:<br/>
 ```kompose --file docker-compose.yml --provider openshift --verbose down```
 
 ### Generating templates and then deploy into OpenShift project
