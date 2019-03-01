@@ -7,7 +7,7 @@ WORKDIR ${APP_ROOT}
 
 ## Install system and apps dependencies
 RUN \
- apk add --no-cache postgresql-libs g++ libxslt-dev openldap-dev lsof && \
+ apk add --no-cache postgresql-libs g++ libxslt-dev openldap-dev lsof rsync && \
  apk add --no-cache --virtual .build-deps gcc musl-dev postgresql-dev vim && \
  apk --update add libxml2-dev libxslt-dev libffi-dev gcc musl-dev libgcc openssl-dev curl && \
  apk add jpeg-dev zlib-dev freetype-dev lcms2-dev openjpeg-dev tiff-dev tk-dev tcl-dev && \
