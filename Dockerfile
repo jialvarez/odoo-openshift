@@ -22,6 +22,7 @@ RUN mkdir -p /run/nginx
 #RUN unzip ${APP_ROOT}/addons/6*.zip* -d ${APP_ROOT}/addons
 
 ## OPTIONAL: If you want to store database backups every day
+ENV PGPASSWORD="myodoo"
 RUN apk add --no-cache postgresql-client bash
 
 ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.8/supercronic-linux-amd64 \
